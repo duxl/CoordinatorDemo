@@ -19,9 +19,30 @@ public abstract class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(getLayoutResId());
         mUnbinder = ButterKnife.bind(this);
+        initView();
     }
 
     public abstract int getLayoutResId();
+
+    public void initView() {
+
+    }
+
+    public void hideActionBar(boolean hide) {
+        if(getSupportActionBar() != null) {
+            if(hide) {
+                getSupportActionBar().hide();
+            } else {
+                getSupportActionBar().show();
+            }
+        }
+    }
+
+    public void setActionBarTitle(CharSequence title) {
+        if(getSupportActionBar() != null) {
+            getSupportActionBar().setTitle(title);
+        }
+    }
 
     @Override
     protected void onDestroy() {
