@@ -8,4 +8,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="ToolbarStyle" parent="Base.Widget.AppCompat.Toolbar">
+        <!-- toolbar的默认高度有点高:https://www.jianshu.com/p/7cb8b82f479a -->
+        <item name="android:minHeight">0dp</item>
+    </style>
+
 </resources>
