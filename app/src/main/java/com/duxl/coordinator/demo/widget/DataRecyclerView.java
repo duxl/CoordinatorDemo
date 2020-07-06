@@ -41,7 +41,11 @@ public class DataRecyclerView extends RecyclerView {
             @Override
             public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
                 TextView textView = holder.itemView.findViewById(android.R.id.text1);
-                textView.setText("Item" + position);
+                if(position == getItemCount() - 1) {
+                    textView.setText("Over");
+                } else {
+                    textView.setText("RecyclerView.Item::" + position);
+                }
             }
 
             @Override
