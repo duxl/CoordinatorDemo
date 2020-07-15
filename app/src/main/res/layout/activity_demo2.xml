@@ -19,7 +19,7 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
                 android:src="@mipmap/head_img"
-                app:layout_scrollFlags="scroll" />
+                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap" />
 
             <TextView
                 android:layout_width="match_parent"
