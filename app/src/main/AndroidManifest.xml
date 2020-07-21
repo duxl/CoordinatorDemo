@@ -2,13 +2,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.duxl.coordinator.demo">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+        <activity android:name="com.duxl.coordinator.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
@@ -16,50 +20,64 @@
             </intent-filter>
         </activity>
 
+        <activity android:name="com.duxl.coordinator.knowledge.CoordinatorDescribeActivity"
+            android:label="知识/CoordinatorLayout">
+            <intent-filter>
+                <action android:name="com.duxl.coordinator.demo.Action" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.duxl.coordinator.knowledge.ScrollFlagsDescribeActivity"
+            android:label="知识/layout_scrollFlags简介">
+            <intent-filter>
+                <action android:name="com.duxl.coordinator.demo.Action" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".SimpleActivity"
-            android:label="简单示例">
+            android:label="示例/简单示例">
             <intent-filter>
                 <action android:name="com.duxl.coordinator.demo.Action" />
             </intent-filter>
         </activity>
 
         <activity android:name=".Demo1Activity"
-            android:label="Demo1">
+            android:label="示例/Demo1">
             <intent-filter>
                 <action android:name="com.duxl.coordinator.demo.Action" />
             </intent-filter>
         </activity>
 
         <activity android:name=".Demo2Activity"
-            android:label="Demo2">
+            android:label="示例/Demo2">
             <intent-filter>
                 <action android:name="com.duxl.coordinator.demo.Action" />
             </intent-filter>
         </activity>
 
         <activity android:name=".Demo3Activity"
-            android:label="Demo3">
+            android:label="示例/Demo3">
             <intent-filter>
                 <action android:name="com.duxl.coordinator.demo.Action" />
             </intent-filter>
         </activity>
 
         <activity android:name=".Demo4Activity"
-            android:label="Demo4（标题滑动后出现）">
+            android:label="示例/Demo4（标题滑动后出现）">
             <intent-filter>
                 <action android:name="com.duxl.coordinator.demo.Action" />
             </intent-filter>
         </activity>
 
         <activity android:name=".Demo5Activity"
-            android:label="Demo5">
+            android:label="示例/Demo5">
             <intent-filter>
                 <action android:name="com.duxl.coordinator.demo.Action" />
             </intent-filter>
         </activity>
 
         <activity android:name=".Demo6Activity"
-            android:label="Demo6">
+            android:label="示例/Demo6">
             <intent-filter>
                 <action android:name="com.duxl.coordinator.demo.Action" />
             </intent-filter>

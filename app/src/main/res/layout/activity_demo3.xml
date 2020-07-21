@@ -26,9 +26,10 @@
                 android:layout_height="wrap_content"
                 android:background="#0AA"
                 android:padding="10sp"
+                android:minHeight="20dp"
                 android:text="下拉时，我优先显示（enterAlways）"
                 android:textColor="#FFFFFF"
-                app:layout_scrollFlags="scroll|enterAlways" />
+                app:layout_scrollFlags="scroll|snap" />
 
             <TextView
                 android:layout_width="match_parent"

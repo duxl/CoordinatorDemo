@@ -2,6 +2,8 @@ package com.duxl.coordinator.demo;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.duxl.coordinator.BaseActivity;
+
 import butterknife.BindView;
 
 /**

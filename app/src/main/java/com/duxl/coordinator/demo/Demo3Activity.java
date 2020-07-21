@@ -1,5 +1,7 @@
 package com.duxl.coordinator.demo;
 
+import com.duxl.coordinator.BaseActivity;
+
 /**
  * create by duxl 2020/7/2
  */

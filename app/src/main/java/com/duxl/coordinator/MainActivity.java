@@ -1,4 +1,4 @@
-package com.duxl.coordinator.demo;
+package com.duxl.coordinator;
 
 import android.app.ListActivity;
 import android.content.Intent;

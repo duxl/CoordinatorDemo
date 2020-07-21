@@ -3,6 +3,8 @@ package com.duxl.coordinator.demo;
 import android.view.MotionEvent;
 import android.view.View;
 
+import com.duxl.coordinator.BaseActivity;
+
 import butterknife.OnTouch;
 
 /**
