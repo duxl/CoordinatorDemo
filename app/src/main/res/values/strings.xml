@@ -58,4 +58,40 @@ Children can specify CoordinatorLayout.LayoutParams.insetEdge to describe how th
 
         ]]>
     </string>
+
+    <string name="collapsing_toolbar_describe">
+        <![CDATA[
+        <p>
+        一些使用技巧：
+        </p>
+
+        <p>
+            默认折叠后的高度是CollapsingToolbarLayout内子控件Toolbar的高度，如果子控件不包含Toolbar，而是自定义的标题，可以在CollapsingToolbarLayout设置app:toolbarId="@+id/custom_title_id"达到折叠后高度是自定义标题的高度
+        </p>
+
+        <p>
+            <br/>标题折叠后的样式<br/>
+            app:collapsedTitleGravity="center|start"
+            app:collapsedTitleTextAppearance="@style/mySmallStyle"
+            app:collapsedTitleTextColor="@color/white"
+
+            <br/>标题展开后的样式<br/>
+            app:expandedTitleGravity="bottom|start"
+            app:expandedTitleTextAppearance="@style/myBigStyle"
+            app:expandedTitleTextColor="@color/white"
+
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+
+            <br/>背景颜色<br/>
+            android:background="@color/theme_bg"
+            <br/>折叠后的背景颜色<br/>
+            app:contentScrim="@color/theme_bg"
+
+
+            <br/>标题折叠模式<br/>
+            app:titleCollapseMode="scale"
+        </p>
+
+        ]]>
+    </string>
 </resources>

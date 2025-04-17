@@ -17,7 +17,7 @@
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:collapsedTitleGravity="center"
+            app:collapsedTitleGravity="center|start"
             app:contentScrim="@color/colorPrimary"
             app:elevation="0dp"
             app:expandedTitleMarginStart="30dp"

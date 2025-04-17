@@ -27,6 +27,13 @@
             </intent-filter>
         </activity>
 
+        <activity android:name="com.duxl.coordinator.knowledge.CollapsingToolBarLayoutDescribeActivity"
+            android:label="知识/CollapsingToolBarLayout">
+            <intent-filter>
+                <action android:name="com.duxl.coordinator.demo.Action" />
+            </intent-filter>
+        </activity>
+
         <activity android:name="com.duxl.coordinator.knowledge.ScrollFlagsDescribeActivity"
             android:label="知识/layout_scrollFlags简介">
             <intent-filter>
