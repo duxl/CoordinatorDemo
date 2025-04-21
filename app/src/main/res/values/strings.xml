@@ -66,7 +66,8 @@ Children can specify CoordinatorLayout.LayoutParams.insetEdge to describe how th
         </p>
 
         <p>
-            默认折叠后的高度是CollapsingToolbarLayout内子控件Toolbar的高度，如果子控件不包含Toolbar，而是自定义的标题，可以在CollapsingToolbarLayout设置app:toolbarId="@+id/custom_title_id"达到折叠后高度是自定义标题的高度
+            默认折叠后的高度是CollapsingToolbarLayout内子控件Toolbar的高度，如果子控件不包含Toolbar，而是自定义的标题，可以在CollapsingToolbarLayout设置app:toolbarId="@+id/custom_title_id"达到折叠后高度是自定义标题的高度。
+            使用app:toolbarId自定义标题栏时，需要设置scrollFlags为"scroll|exitUntilCollapsed"才能保证标题栏不被滑动出屏幕，而且LinearLayout的weight权重将无效
         </p>
 
         <p>
